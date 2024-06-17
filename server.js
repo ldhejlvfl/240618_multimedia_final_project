@@ -22,9 +22,7 @@ wss.on('connection', ws => {
 
         //做迴圈，發送訊息至每個 client
         clients.forEach(client => {
-            if (client.readyState === WebSocket.OPEN) {
-                client.send(data);
-            }
+            client.send(data)
         })
     })
 

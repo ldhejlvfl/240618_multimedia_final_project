@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template, url_for
 import os
-import mysql.connector
 from datetime import datetime
 
 app = Flask(__name__)
